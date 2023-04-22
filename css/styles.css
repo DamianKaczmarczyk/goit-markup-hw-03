@@ -50,11 +50,9 @@ a {
     margin: 0 auto;
   }
 /* ---------- HEADER --------------*/
-header {
+.header {
     border-bottom:1px solid #ECECEC;
     background-color:var(--focus-color);
-    height: 80px;
-    margin-bottom: 0px;
 }
 .navigation-header {
     margin-right: auto;
@@ -134,13 +132,16 @@ header {
 
 .team-job {
         line-height: 1.187;
-        color:var(--navigation-color)
+        color:var(--navigation-color);
+        text-align:center;
 }
 
 .team-name {
         font-weight: 500;
         line-height: 1.187;
         color:var(--secondary-color);
+        text-align: center;
+        margin: 15px;
 }
 .team-img-list-item {
          background-color:var(--focus-color);
@@ -283,7 +284,6 @@ margin-right: 8px;
     .nav-link:focus {
         color:var(--main-color);
     }
-    
 /* ---------- END-MAIN --------------*/
 
 /* ---------- PORTFOLIO --------------*/
