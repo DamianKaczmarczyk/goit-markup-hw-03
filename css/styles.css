@@ -15,6 +15,7 @@
 }
   * {
     margin: 0;
+    padding: 0;
   }
   ul {
 
@@ -40,6 +41,10 @@ a {
 .slogan {
     background-color:var(--hero-item-background-color);
     height: 600px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .section {
     padding: 94px 0;
@@ -51,15 +56,33 @@ a {
   }
 /* ---------- HEADER --------------*/
 .header {
+    max-height: 80px;
     border-bottom:1px solid #ECECEC;
     background-color:var(--focus-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
-.navigation-header {
-    margin-right: auto;
-    display:flex;
-    justify-content:space-evenly;
-    align-items:center;
+.menu {
+    display:inline-block;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    list-style: none;
 }
+.contact {
+    display:inline-block;
+    justify-content: flex-end;
+    gap: 8px;
+    margin: 0;
+    list-style: none;
+}
+.menu .link {
+    display: block;
+  }
+  
 .logo,
 .logo-color {
     font-family: var(--secondary-font);
@@ -77,26 +100,6 @@ a {
 }
 .button {
     cursor: pointer;
-}
-.navigation {
-    display:inline;
-    margin-bottom: 0px;
-    align-items:center;
-}
-.navigation-all {
-    display:flex;
-}
-.navigation-list-list {
-    display:inline-block;
-    justify-content:space-between;
-    align-items:center;
-}
-.navigation-link{
-    margin-top:32px;
-}
-.nav-link {
-    display:inline;
-    margin-inline: 23px;
 }
 .navigation-list-link,
 .navigation-list-mail,
@@ -238,11 +241,9 @@ line-height: 30px;
                     letter-spacing: 0.06em;
                     font-size: 16px;
                     color:var(--focus-color);
-                    padding: 10px 41px 10px 42px;
-                    display:flex;
-                    align-items: center;
-                    text-align: center;
-
+                    width: 200px;
+                    height: 50px;
+                    margin-top: 30px;
                     }
 .nav-button-card {
     
@@ -287,13 +288,20 @@ margin-right: 8px;
 /* ---------- END-MAIN --------------*/
 
 /* ---------- PORTFOLIO --------------*/
+.portfolio-ul-list {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
 .portfolio-list {
     display:inline-block;
     justify-content: space-between;
     width: 370px;
     height: 404px;
     border: 1px solid #EEEEEE;
-    margin-block: 30px;
+    margin:0px 25px 30px 0px;
+    padding: 0px;
 }
 .portfolio-item {
         font-size: 18px;
