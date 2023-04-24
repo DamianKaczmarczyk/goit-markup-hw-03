@@ -38,14 +38,7 @@ body {
 a {
     text-decoration: none;
 }
-.slogan {
-    background-color:var(--hero-item-background-color);
-    height: 600px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+
 .section {
     padding: 94px 0;
   }
@@ -56,31 +49,27 @@ a {
   }
 /* ---------- HEADER --------------*/
 .header {
-    max-height: 80px;
     border-bottom:1px solid #ECECEC;
     background-color:var(--focus-color);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
 }
 .menu {
-    display:inline-block;
-    justify-content: space-between;
-    align-items: center;
-    gap: 8px;
-    margin: 0;
-    list-style: none;
+    display:flex;
+    column-gap: 46px;
+
 }
 .contact {
-    display:inline-block;
-    justify-content: flex-end;
-    gap: 8px;
-    margin: 0;
-    list-style: none;
+    display:flex;
+    column-gap: 50px;
 }
-.menu .link {
-    display: block;
+  .rodzic {
+    display:flex;
+    column-gap: 93px;
+  }
+  .dodatkowa-klasa {
+    display:flex;
+    justify-content:space-between;
+    padding: 25px 0px;
+    height: 80px;
   }
   
 .logo,
@@ -229,6 +218,14 @@ line-height: 30px;
             color:var(--focus-color);
             background-color: var(--main-color);
         } 
+.slogan {
+            background-color:var(--hero-item-background-color);
+            height: 600px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
  .slogan-button {
     
             font-family: 'Roboto';
