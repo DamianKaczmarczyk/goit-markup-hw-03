@@ -52,22 +52,22 @@ a {
 }
 .menu {
   display: flex;
+  justify-items: end;
   column-gap: 46px;
 }
 .contact {
   display: flex;
   column-gap: 50px;
 }
-.rodzic {
-  display: flex;
-  column-gap: 93px;
-}
 .dodatkowa-klasa {
   display: flex;
-  justify-content: space-between;
   padding: 25px 0px;
 }
-
+.rodzic {
+  display: flex;
+  margin-left: 93px;
+  margin-right: 364px;
+}
 .logo,
 .logo-color {
   font-family: var(--secondary-font);
