@@ -20,12 +20,11 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Portfolio</title>
   </head>
-
   <body>
     <header class="header">
-      <div class="container dodatkowa-klasa">
-        <a class="logo link" href="index.html">Web<span class="logo-color">Studio</span></a>
-        <nav class="rodzic">
+      <div class="container nav-container">
+        <nav class="nav-header">
+          <a class="logo link" href="index.html">Web<span class="logo-color">Studio</span></a>
           <ul class="menu">
             <li class="navigation-list">
               <a class="navigation-list-link link" href="./index.html">Agencja</a>
@@ -39,13 +38,11 @@
           </ul>
         </nav>
         <ul class="contact">
-          <li class="navigation-list">
-            <a class="navigation-list-mail link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+          <li class="contact-list">
+            <a class="link-contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li class="navigation-list">
-            <a class="navigation-list-tel link" href="tel:+48111111111">+48 111 111 111</a>
+          <li class="link-contact">
+            <a class="link-contact link" href="tel:+48111111111">+48 111 111 111</a>
           </li>
         </ul>
       </div>
@@ -83,7 +80,6 @@
               <h3 class="portfolio-item">Technocrack</h3>
               <p class="portfolio-class-description">Strona internetowa</p>
             </li>
-
             <li class="portfolio-list">
               <img
                 class="portfolio-img"
@@ -95,7 +91,6 @@
               <h3 class="portfolio-item">Grafika New Orlean vs Golden Star</h3>
               <p class="portfolio-class-description">Dizajn</p>
             </li>
-
             <li class="portfolio-list">
               <img
                 class="portfolio-img"
@@ -107,7 +102,6 @@
               <h3 class="portfolio-item">Restauracja Seafood</h3>
               <p class="portfolio-class-description">Aplikacja</p>
             </li>
-
             <li class="portfolio-list">
               <img
                 class="portfolio-img"
@@ -119,7 +113,6 @@
               <h3 class="portfolio-item">Projekt Prime</h3>
               <p class="portfolio-class-description">Marketing</p>
             </li>
-
             <li class="portfolio-list">
               <img
                 class="portfolio-img"
@@ -143,7 +136,6 @@
               <h3 class="portfolio-item">Inspiration has no Borders</h3>
               <p class="portfolio-class-description">Strona internetowa</p>
             </li>
-
             <li class="portfolio-list">
               <img
                 class="portfolio-img"
@@ -166,7 +158,6 @@
               <h3 class="portfolio-item">Projekt LAB</h3>
               <p class="portfolio-class-description">Marketing</p>
             </li>
-
             <li class="portfolio-list">
               <img
                 class="portfolio-img"
@@ -183,33 +174,27 @@
       </section>
     </main>
     <footer class="footer">
-      <section class="section">
-        <div class="container">
-          <section class="logo-link">
-            <a class="logo link" href="index.html"
-              >Web<span class="footer-logo-color">Studio</span></a
-            >
-          </section>
-          <address>
-            <ul class="address list">
-              <li class="footer-address">
-                <a
-                  class="footer-address-item link"
-                  href="https://goo.gl/maps/xpxpCTiTsb5umE3t5"
-                  target="_blank"
-                  >m. Warszawa, Aleje Jerozolimskie 21</a
-                >
-              </li>
-              <li class="address-mail-footer">
-                <a class="footer-mail" href="mailto:info@example.com">info@example.com</a>
-              </li>
-              <li class="address-tel-footer">
-                <a class="footer-tel" href="tel:+48111111111">+48 111 111 111</a>
-              </li>
-            </ul>
-          </address>
-        </div>
-      </section>
+      <div class="container footer-container">
+        <a class="logo link" href="index.html">Web<span class="footer-logo-color">Studio</span></a>
+        <address>
+          <ul class="address list">
+            <li class="footer-address">
+              <a
+                class="footer-address-item link"
+                href="https://goo.gl/maps/xpxpCTiTsb5umE3t5"
+                target="_blank"
+                >m. Warszawa, Aleje Jerozolimskie 21</a
+              >
+            </li>
+            <li class="address-mail-footer">
+              <a class="footer-tel-mail" href="mailto:info@example.com">info@example.com</a>
+            </li>
+            <li class="address-tel-footer">
+              <a class="footer-tel-mail" href="tel:+48111111111">+48 111 111 111</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

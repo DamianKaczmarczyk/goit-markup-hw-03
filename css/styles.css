@@ -28,7 +28,6 @@ button {
 }
 body {
   font-family: var(--main-font);
-  font-family: 'Roboto';
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
@@ -36,9 +35,11 @@ body {
 a {
   text-decoration: none;
 }
-
 .section {
   padding: 94px 0;
+}
+.section-lorem {
+  padding-bottom: 0px;
 }
 .container {
   max-width: 1200px;
@@ -52,21 +53,24 @@ a {
 }
 .menu {
   display: flex;
-  justify-items: end;
   column-gap: 46px;
+  justify-content: space-between;
+  margin: 0px;
 }
 .contact {
   display: flex;
   column-gap: 50px;
 }
-.dodatkowa-klasa {
+.nav-container {
   display: flex;
-  padding: 25px 0px;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
 }
-.rodzic {
+.nav-header {
   display: flex;
-  margin-left: 93px;
-  margin-right: 364px;
+  column-gap: 93px;
+  align-items: center;
 }
 .logo,
 .logo-color {
@@ -75,57 +79,46 @@ a {
   line-height: 1.192;
   color: var(--main-color);
 }
-
 .logo {
   color: rgba(33, 150, 243, 1);
 }
 .logo-color {
   color: rgba(0, 0, 0, 1);
 }
-.button {
-  cursor: pointer;
-}
 .navigation-list-link,
-.navigation-list-mail,
-.navigation-list-tel {
-  font-weight: 500;
-  line-height: 1.143;
-  letter-spacing: 0.02em;
-  color: var(--secondary-color);
-}
-.navigation-list-mail,
-.navigation-list-tel {
-  color: var(--navigation-color);
-}
-
 .navigation-list-link:hover,
 .navigation-list-link:focus,
-.navigation-list-mail:hover,
-.navigation-list-mail:focus,
-.navigation-list-tel:hover,
-.navigation-list-tel:focus {
+.link-contact:hover,
+.link-contact:focus {
   color: var(--main-color);
 }
+.navigation-list-link {
+  font-style: var(--main-font);
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+.link-contact {
+  font-style: var(--main-font);
+  color: var(--navigation-color);
+  font-weight: 500;
+}
 /* -----------END HEADER --------- */
-
 /* ---------- MAIN --------------*/
 .about-img-list {
   display: flex;
-  justify-content: space-between;
+  column-gap: 30px;
 }
-
 .team-job {
   line-height: 1.187;
   color: var(--navigation-color);
   text-align: center;
 }
-
 .team-name {
   font-weight: 500;
   line-height: 1.187;
   color: var(--secondary-color);
   text-align: center;
-  margin: 15px;
+  padding: 15px;
 }
 .team-img-list-item {
   background-color: var(--focus-color);
@@ -137,10 +130,9 @@ a {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
 .team-img-list {
   display: flex;
-  justify-content: space-between;
+  column-gap: 30px;
 }
 .secondary-undertitle {
   font-size: 36px;
@@ -148,29 +140,20 @@ a {
   color: var(--secondary-color);
   width: 160;
   margin-bottom: 50px;
-  margin-left: 0px;
-  display: block;
   text-align: center;
 }
-
 .hero-text {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
+  font-family: var(--main-font);
   line-height: 24px;
   width: 270px;
-  height: 75px;
   color: var(--navigation-color);
 }
-
 .undertitle {
   line-height: 1.143;
   text-transform: uppercase;
   color: var(--secondary-color);
   margin-bottom: 10px;
 }
-
 .hero-item-text {
   font-weight: 900;
   font-size: 44px;
@@ -178,11 +161,8 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--focus-color);
-  text-align: center;
-  display: flex;
-  width: 696px;
-  height: 120px;
   margin: 0 auto;
+  width: 696px;
 }
 .hero-description-list {
   display: flex;
@@ -195,7 +175,7 @@ a {
   background-color: var(--hero-item-background-color);
 }
 .hero-model-btn {
-  font-family: 'Roboto';
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 30px;
   background-color: var(--button-background-color);
@@ -210,40 +190,41 @@ a {
   color: var(--focus-color);
   background-color: var(--main-color);
 }
-.slogan {
+.business-solutions {
   background-color: var(--hero-item-background-color);
   height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 200px;
+}
+.business-solutions-container {
   text-align: center;
 }
-.slogan-button {
-  font-family: 'Roboto';
+.business-solutions-button {
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 30px;
   background-color: var(--main-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  line-height: 30px;
   letter-spacing: 0.06em;
-  font-size: 16px;
   color: var(--focus-color);
   width: 200px;
   height: 50px;
   margin-top: 30px;
 }
 .nav-button-card {
-  font-family: 'Roboto';
+  font-family: var(--main-font);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.625;
   color: var(--secondary-color);
   background-color: var(--button-background-color);
-  border: 0;
+  border-radius: 4px;
   width: 121px;
   height: 38px;
   margin-right: 8px;
+}
+.nav-button-card:hover {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .bg-color {
   background-color: var(--button-background-color);
@@ -260,7 +241,7 @@ a {
   margin-bottom: 50px;
 }
 .nav-link {
-  font-family: 'Roboto';
+  font-family: var(--main-font);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.625;
@@ -272,7 +253,6 @@ a {
   color: var(--main-color);
 }
 /* ---------- END-MAIN --------------*/
-
 /* ---------- PORTFOLIO --------------*/
 .portfolio-ul-list {
   display: flex;
@@ -303,26 +283,40 @@ a {
   margin: 0px 24px 20px 24px;
 }
 /* ---------- END-PORTFOLIO --------------*/
-
 /* ---------- FOOTER --------------*/
 .footer {
   background: var(--hero-item-background-color);
   height: 252px;
 }
-.footer-mail,
-.footer-tel {
-  text-decoration: none;
+.footer-tel-mail {
+  font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
+.footer-tel-mail:hover,
+.footer-tel-mail:focus {
+  color: var(--main-color);
+}
 .footer-address-item {
-  font-family: 'Roboto';
+  font-family: var(--main-font);
   color: var(--focus-color);
   font-style: normal;
+}
+.footer-address-item:hover,
+.footer-address-item:focus {
+  color: var(--main-color);
 }
 .footer-logo-color {
   color: rgba(255, 255, 255, 1);
 }
+.footer-container {
+  display: flex;
+  padding-top: 60px;
+  flex-direction: column;
+  row-gap: 20px;
+}
 .adress-list {
   display: flex;
+  flex-direction: column;
+  row-gap: 9px;
 }
 /* ---------- END-FOOTER --------------*/

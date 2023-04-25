@@ -22,9 +22,9 @@
   </head>
   <body>
     <header class="header">
-      <div class="container dodatkowa-klasa">
-        <a class="logo link" href="index.html">Web<span class="logo-color">Studio</span></a>
-        <nav class="rodzic">
+      <div class="container nav-container">
+        <nav class="nav-header">
+          <a class="logo link" href="index.html">Web<span class="logo-color">Studio</span></a>
           <ul class="menu">
             <li class="navigation-list">
               <a class="navigation-list-link link" href="./index.html">Agencja</a>
@@ -38,30 +38,24 @@
           </ul>
         </nav>
         <ul class="contact">
-          <li class="navigation-list">
-            <a class="navigation-list-mail link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+          <li class="contact-list">
+            <a class="link-contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li class="navigation-list">
-            <a class="navigation-list-tel link" href="tel:+48111111111">+48 111 111 111</a>
+          <li class="link-contact">
+            <a class="link-contact link" href="tel:+48111111111">+48 111 111 111</a>
           </li>
         </ul>
       </div>
     </header>
-
     <!--  Efektywne Rozwiązania hero  -->
     <main>
-      <section class="slogan">
-        <section class="section">
-          <div class="container">
-            <h1 class="hero-item-text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-            <button class="slogan-button" type="button">Zamów usługę</button>
-          </div>
-        </section>
+      <section class="section business-solutions">
+        <div class="container business-solutions-container">
+          <h1 class="hero-item-text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+          <button class="business-solutions-button" type="button">Zamów usługę</button>
+        </div>
       </section>
-
-      <section class="section">
+      <section class="section section-lorem">
         <div class="container">
           <ul class="hero-description-list">
             <li class="hero-description-text">
@@ -131,88 +125,79 @@
         </div>
       </section>
       <!--  team  -->
-      <section class="bg-color">
-        <section class="section">
-          <div class="container">
-            <h2 class="secondary-undertitle">Nasz zespół</h2>
-            <ul class="team-img-list">
-              <li class="team-img-list-item">
-                <img
-                  class="team-img-list-img"
-                  src="./images/7.jpg"
-                  alt="john doe product designer"
-                  width="270"
-                  height="260"
-                />
-                <h3 class="team-name">John Doe</h3>
-                <p class="team-job">Product Designer</p>
-              </li>
-
-              <li class="team-img-list-item">
-                <img
-                  class="team-img-list-img"
-                  src="./images/4.jpg"
-                  alt="john doe frontend developer"
-                  width="270"
-                  height="260"
-                />
-                <h3 class="team-name">John Doe</h3>
-                <p class="team-job">Frontend Developer</p>
-              </li>
-
-              <li class="team-img-list-item">
-                <img
-                  class="team-img-list-img"
-                  src="./images/5.jpg"
-                  alt="john doe marketing"
-                  width="270"
-                  height="260"
-                />
-                <h3 class="team-name">John Doe</h3>
-                <p class="team-job">Marketing</p>
-              </li>
-
-              <li class="team-img-list-item">
-                <img
-                  class="team-img-list-img"
-                  src="./images/6.jpg"
-                  alt="john doe ui designer"
-                  width="270"
-                  height="260"
-                />
-                <h3 class="team-name">John Doe</h3>
-                <p class="team-job">UI Designer</p>
-              </li>
-            </ul>
-          </div>
-        </section>
+      <section class="section bg-color">
+        <div class="container">
+          <h2 class="secondary-undertitle">Nasz zespół</h2>
+          <ul class="team-img-list">
+            <li class="team-img-list-item">
+              <img
+                class="team-img-list-img"
+                src="./images/7.jpg"
+                alt="john doe product designer"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">John Doe</h3>
+              <p class="team-job">Product Designer</p>
+            </li>
+            <li class="team-img-list-item">
+              <img
+                class="team-img-list-img"
+                src="./images/4.jpg"
+                alt="john doe frontend developer"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">John Doe</h3>
+              <p class="team-job">Frontend Developer</p>
+            </li>
+            <li class="team-img-list-item">
+              <img
+                class="team-img-list-img"
+                src="./images/5.jpg"
+                alt="john doe marketing"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">John Doe</h3>
+              <p class="team-job">Marketing</p>
+            </li>
+            <li class="team-img-list-item">
+              <img
+                class="team-img-list-img"
+                src="./images/6.jpg"
+                alt="john doe ui designer"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">John Doe</h3>
+              <p class="team-job">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <section class="section">
-          <a class="logo link" href="index.html"
-            >Web<span class="footer-logo-color">Studio</span></a
-          >
-          <address>
-            <ul class="address list">
-              <li class="footer-address">
-                <a
-                  class="footer-address-item link"
-                  href="https://goo.gl/maps/xpxpCTiTsb5umE3t5"
-                  target="_blank"
-                  >m. Warszawa, Aleje Jerozolimskie 21</a
-                >
-              </li>
-              <li class="address-mail-footer">
-                <a class="footer-mail" href="mailto:info@example.com">info@example.com</a>
-              </li>
-              <li class="address-tel-footer">
-                <a class="footer-tel" href="tel:+48111111111">+48 111 111 111</a>
-              </li>
-            </ul>
-          </address>
-        </section>
+      <div class="container footer-container">
+        <a class="logo link" href="index.html">Web<span class="footer-logo-color">Studio</span></a>
+        <address>
+          <ul class="address list">
+            <li class="footer-address">
+              <a
+                class="footer-address-item link"
+                href="https://goo.gl/maps/xpxpCTiTsb5umE3t5"
+                target="_blank"
+                >m. Warszawa, Aleje Jerozolimskie 21</a
+              >
+            </li>
+            <li class="address-mail-footer">
+              <a class="footer-tel-mail" href="mailto:info@example.com">info@example.com</a>
+            </li>
+            <li class="address-tel-footer">
+              <a class="footer-tel-mail" href="tel:+48111111111">+48 111 111 111</a>
+            </li>
+          </ul>
+        </address>
       </div>
     </footer>
   </body>
